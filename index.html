@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Music player widget</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Player (Mobile)</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    
-    <script src="./script.js"></script>
+
+<div class="container">
+  <div class="header">
+    <h1>Spotify Player</h1>
+  </div>
+
+  <div class="player-container">
+    <div class="album-art">
+      <img src="album_cover.jpg" alt="Album Cover">
+    </div>
+    <div class="player-controls">
+      <audio id="audioPlayer" controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+      </audio>
+      <div class="track-info">
+        <h2 class="track-title">Nome da Música</h2>
+        <p class="artist">Artista</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="playlist">
+    <ul>
+      <li><a href="#" data-src="music1.mp3">Música 1</a></li>
+      <li><a href="#" data-src="music2.mp3">Música 2</a></li>
+      <li><a href="#" data-src="music3.mp3">Música 3</a></li>
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

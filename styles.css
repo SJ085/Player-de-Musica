@@ -1,59 +1,75 @@
-.music-player {
-    --color-white: #fff;
-    --color-gray: #e5e7ea;
-    --color-blue: #78adfe;
-    --color-blue-dark: #5781bd;
-
-    --box-shadow: 0 2px 6px 1px #0000001f;
-
-    --color-text-1: #000;
-    --color-text-2: #0000006b;
-
-    --cover-size: 3.8125em;
-    --border-radius: 1.625em;
-
-    --music-player-height: 24.375em;
-    --offset-cover: 1.60125em;
-
-    width: 20.9375em;
-    overflow: hidden;
-    user-select: none;
-    color: var(--color-text-1);
-    height: var(--music-player-height);
-    border-radius: var(--border-radius);
-    background-color: var(--color-white);
-}
-
-.slider.resize .progress {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    color: #1DB954;
+  }
+  
+  .player-container {
+    background-color: #191414;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .album-art img {
     width: 100%;
-}
-
-.progress__wrapper {
-    width: 100%;
-    height: 0.3125em;
-    position: relative;
-    border-radius: 1em;
-    background-color: var(--color-gray);
-}
-
-.progress__bar {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    
-    border-radius: inherit;
-    background-color: var(--color-blue);
-}
-
-.progress__bar::after { 
-    --size: 0.4375em;
-
-    left: 98%; 
-    content: ''; 
-    position: absolute;
-    width: var(--size);
-    height: var(--size); 
-    border-radius: 100%;
-    background-color: var(--color-blue-dark);
-}
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .player-controls {
+    text-align: center;
+  }
+  
+  .track-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .artist {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  
+  .playlist {
+    background-color: #191414;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlist ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .playlist ul li {
+    margin-bottom: 10px;
+  }
+  
+  .playlist ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .playlist ul li a:hover {
+    color: #1DB954;
+  }
+  
